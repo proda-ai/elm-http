@@ -1,12 +1,12 @@
 module Main exposing (Model, Msg(..), dropDecoder, hijackOn, init, main, subscriptions, update, view)
 
-import Compat.Json.Decode as D
+import Compat.Http as Http
 import File exposing (File)
+import File.Compat.Json.Decode as D
 import File.Select as Select
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
-import Http
 import Json.Decode as D
 
 

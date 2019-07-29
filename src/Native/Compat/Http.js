@@ -28,7 +28,7 @@ var _proda_ai$elm_http$Native_Compat_Http = function() {
 
     var toTask = F3(function(router, toTask, request)
     {
-        console.log(request);
+        //console.log(request);
         return _elm_lang$core$Native_Scheduler.nativeBinding(function(callback)
         {
             function done(response) {
@@ -39,7 +39,7 @@ var _proda_ai$elm_http$Native_Compat_Http = function() {
             xhr.addEventListener('error', function() { done(_proda_ai$elm_http$Compat_Http$NetworkError_); });
             xhr.addEventListener('timeout', function() { done(_proda_ai$elm_http$Compat_Http$Timeout_); });
             xhr.addEventListener('load', function() { done(toResponse(request.expect.toBody, xhr)); });
-            console.log(request.tracker);
+            //console.log(request.tracker);
             isJust(request.tracker) && track(router, xhr, request.tracker._0);
 
             try {
@@ -50,7 +50,7 @@ var _proda_ai$elm_http$Native_Compat_Http = function() {
 
             configureRequest(xhr, request);
 
-            console.log(request.body)
+            //console.log(request.body)
 
             request.body._0 && xhr.setRequestHeader('Content-Type', request.body._0);
             xhr.send(request.body._1);
@@ -170,9 +170,9 @@ var _proda_ai$elm_http$Native_Compat_Http = function() {
             formData.append(part._0, part._1);
         }
 
-        for (var value of formData.values()) {
-            console.log('value',value);
-        }
+        //for (var value of formData.values()) {
+        //    console.log('value',value);
+        //}
         return formData;
     }
 
