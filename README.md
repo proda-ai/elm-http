@@ -1,3 +1,5 @@
+# 0.18 port of 0.19's http api for upgrading
+
 # HTTP
 
 Make HTTP requests in Elm. Talk to servers.

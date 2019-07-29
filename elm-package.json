@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
+    "summary": "0.18 port of 0.19's http api for upgrading",
     "repository": "https://github.com/proda-ai/elm-http.git",
     "license": "BSD3",
     "source-directories":  [
